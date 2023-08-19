@@ -92,16 +92,46 @@
                     cursor: pointer;
                 }
             }
+
+            .buttonWithIcon{
+                border: 1px solid #E2E8F0;
+                border-radius: 10px;
+                height: 30px;
+                padding-right: 6px;
+                padding-left: 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+            .vertical-line-65{
+                border: 0.25px solid #E2E8F0;
+                height: 65%;
+                width: 0px;
+                margin-left: 4px;
+                margin-right: 8px;
+            }
         </style>
 	</head>
 	<body>
-        <h1 class="titleA">KnockKnock</h1>
+        <h1 class="titleA">KnockKnock Lab</h1>
+
         <h3 class="titleB">More about knockknock.js</h3>
         <div class="capsuleButton">
             <p class="textA">NPM : knockknock.js</p>
         </div>
+
+        <h3 class="titleB">Test knockknock.js</h3>
+        <div id="knockknock-module-trigger" class="buttonWithIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" padding="0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <div class="vertical-line-65"></div>
+            <p class="textA">Run knockknock.js</p>
+        </div>
 	</body>
     <script src="../dist/index.js"></script>
+    <script src="scripts/testKnockKnock.js"></script>
     <script>
         const capsuleButton = document.querySelector('.capsuleButton');
         capsuleButton.addEventListener('click', function(){
